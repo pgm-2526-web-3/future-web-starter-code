@@ -1,5 +1,3 @@
-# Pseudo Classes
+# Simple Starter Vite Project
 
-- :is
-- :where
-- :has
+This starter project contains 

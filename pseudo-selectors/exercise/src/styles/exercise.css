@@ -1,0 +1,24 @@
+/**
+* Gebruik :is selector om te stijlen zoals in de tekst beschreven staat.
+*
+* Wat gebeurt er bij een typo bij een klassieke multi-selector?
+* Vergelijk met :is()
+*
+* Wat met de specificiteit? Klassieke selector vs :is()? Plaats ze eens boven of onder elkaar.
+*/
+
+/**
+* Gebruik :where selector om te stijlen zoals in de tekst beschreven staat.Wat gebeurt er met de specificiteit?
+*/
+
+/**
+* Gebruik :not selector om te stijlen zoals in de tekst beschreven staat.
+*/
+
+/**
+* Gebruik :has selector om te stijlen zoals in de tekst beschreven staat.
+*/
+
+/**
+* Style de navigatie links met de :has pseudo-selector.
+*/

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starter Project</title>
+  </head>
+  <body data-theme="dark">
+    <nav class="container">
+      <ul>
+        <li><strong>Web 3</strong></li>
+      </ul>
+      <ul>
+        <li><a href="/" aria-current="page">Home</a></li>
+        <li><a href="/detail">Detail</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <section>
+        <h1>Pseudo-selectoren</h1>
+        <p>Dit de HTML-code voor het hoofdstuk Pseudo-selectoren.</p>
+      </section>
+
+      <hr>
+
+      <section class="container">
+        <h2>De <code>:is</code> pseudo-selector</h2>
+
+        <article class="is-container">
+          <h3>Hier is een titel, maak deze rood</h3>
+          <p>Hier is een paragraaf, in deze tekst kan je <span>dit woord</span> rood maken en ook <strong>deze
+              tekst</strong>.</p>
+          <p>
+            Ook kan er altijd een <a href="#">link</a> zijn, kan je deze ook blauw maken wanneer je hovert, maar ook
+            wanneer je focust?
+          </p>
+        </article>
+      </section>
+
+      <hr>
+
+      <section class="container">
+        <h2>De <code>:where</code> pseudo-selector</h2>
+
+        <article class="is-container">
+          <h3>Hier is een titel, maak deze blauw</h3>
+          <p>Hier is een paragraaf, in deze tekst kan je <span>dit woord</span> blauw maken en ook <strong>deze
+              tekst</strong>.</p>
+          <p>
+            Ook kan er altijd een <a href="#">link</a> zijn, kan je deze ook groen maken wanneer je hovert, maar ook
+            wanneer je focust?
+          </p>
+        </article>
+      </section>
+
+      <hr>
+
+      <section class="container">
+        <h2>De <code>:not</code> pseudo-selector</h2>
+
+        <article class="not-container">
+          <p>Hier is een paragraaf, maak alle paragrafen in deze "not-container schuingedrukt.</p>
+          <p class="no-italic">Hier is een paragraaf, maak alle paragrafen in deze "not-container schuingedrukt behalve
+            deze omdat die een class heeft van .no-italic.</p>
+          <p>Hier is een paragraaf, maak alle paragrafen in deze "not-container schuingedrukt.</p>
+          <p>Hier is een paragraaf, maak alle paragrafen in deze "not-container schuingedrukt.</p>
+        </article>
+      </section>
+
+      <hr>
+
+      <section class="container">
+        <h2>De <code>:has</code> pseudo-selector</h2>
+
+        <article class="card">
+          <h3>Met knop</h3>
+          <p>
+            Dit kaartje heeft een knop, kan je dit een zwarte achtergrondkleur geven.
+          </p>
+          <a class="button" href="#" role="button">
+            Read more
+          </a>
+        </article>
+
+        <article class="card">
+          <h3>Zonder knop</h3>
+          <p>
+            Dit kaartje heeft geen knop, hier moet je geen achtergrondkleur aan geven. Maar kan je wel alle
+            <strong>vetgedrukte woorden</strong> die in een kaart zitten <strong>zonder</strong> knop een gele kleur
+            geven.
+          </p>
+        </article>
+
+        <hr>
+
+        <h2>Hover effect met de <code>:has</code>pseudo-selector.</h2>
+        <p>Wanneer je hovert op een navigatielink, pas dan de <code>opacity</code> aan van de andere links.</p>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Detail</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </section>
+    </main>
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>
