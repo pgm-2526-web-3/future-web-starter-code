@@ -1,0 +1,5 @@
+@layer exercise {
+  body {
+    background-color: var(--pico-primary-lightest);
+  }
+}
