@@ -15,7 +15,7 @@ A collection of small starter projects and exercises for web development practic
 
 ## Structure
 
-- /<exercise-folder>/
+- `<exercise-folder>`
   - package.json
   - src/ (or public/)
     - starter-code (do not change things here as a student)
