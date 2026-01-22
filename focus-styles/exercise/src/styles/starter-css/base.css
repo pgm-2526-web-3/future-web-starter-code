@@ -1,0 +1,20 @@
+/**
+* Base CSS file to import Pico.css and set custom properties.
+*/
+
+:root {
+  font-family: sans-serif;
+  background-color: rgb(0, 0, 27);
+  color: white;
+}
+
+.container {
+  padding-inline: 2rem;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+section,
+.container {
+  margin-block: 3rem;
+}
