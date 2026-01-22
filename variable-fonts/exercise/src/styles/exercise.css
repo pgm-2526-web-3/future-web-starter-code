@@ -1,0 +1,6 @@
+/* Variable fonts don't just work with weight! */
+/* https://fonts.google.com/specimen/Kablammo */
+
+h1 {
+  /* Using the MORF axis to vary the shape of the letters, play with hover effects! */
+}
