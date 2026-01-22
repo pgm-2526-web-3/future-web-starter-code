@@ -1,0 +1,19 @@
+/**
+* Nesting is handig, kan ook met combinatieselectoren zoals +, >, ~
+*/
+
+/**
+* Wat met de ampersand (&) selector?
+*/
+
+/**
+* Niet over-nesten! Maximaal 3 niveaus diep.
+*/
+
+/**
+* Geen concatenatie van selectors mogelijk in pure CSS (Kan wel met preprocessors zoals Sass). Bijvoorbeeld met BEM gaat dit niet.
+*/
+
+/*
+* Nesting met media queries!
+*/

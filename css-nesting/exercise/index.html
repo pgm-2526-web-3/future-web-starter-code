@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Nesting</title>
+  </head>
+  <body data-theme="dark">
+    <nav class="container">
+      <ul>
+        <li><strong>Web 3</strong></li>
+      </ul>
+      <ul>
+        <li><a href="/" aria-current="page">Home</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="container">
+        <h1>CSS Nesting</h1>
+        <p>CSS Nesting allows you to nest your CSS selectors in a way that follows the same visual hierarchy of your
+          HTML.</p>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2>Voorbeeld</h2>
+          <p>
+            In onderstaand voorbeeld zie je hoe je met geneste CSS de stijl van een links en knoppen binnen een bepaalde
+            sectie
+            kunt aanpassen zonder dat dit invloed heeft op knoppen of links buiten die sectie.
+          </p>
+          <article class="card">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia nam doloremque dignissimos esse! <a
+                href="#">Blanditis</a>
+              ?
+            </p>
+
+            <a href="#" role="button">Lees meer</a>
+          </article>
+
+          <p>
+            Eerste zin na een <code>article</code> kan je ook selecteren met geneste CSS, geef deze zin een gele
+            achtergrond.
+          </p>
+
+          <h3>Losstaande elementen</h3>
+          <small>Deze elementen staan los van de geneste structuur.</small>
+          <hr>
+          <a href="#">Blanditis</a>
+          <hr>
+          <a href="#" role="button">Lees meer</a>
+      </section>
+
+
+      <section class="container">
+        <h2>Nesting en media queries!</h2>
+        <p class="lead">Je kunt ook media queries binnen geneste CSS gebruiken. Zo zal deze tekst groter worden op
+          grotere schermen.</p>
+      </section>
+    </main>
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>
