@@ -1,3 +1,11 @@
+/* Anchor tags? */
+
+html {
+  scroll-behavior: auto !important; /* Disable smooth scrolling to show students (built into user agent) */
+
+  /* Padding top, bijvoorbeeld wanneer navbar fixed is? */
+}
+
 /* Make sure you can scroll, you need overflow*/
 /* Scroll snapping on parent container, scroll aligning on children */
 
