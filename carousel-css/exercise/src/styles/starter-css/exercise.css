@@ -1,0 +1,27 @@
+/**
+* CSS file with some starter css for exercises.
+*/
+
+html {
+  overflow-x: clip;
+}
+
+ul li {
+  list-style: none;
+}
+
+.carousel {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+
+  .carousel__item {
+    flex: 0 0 auto;
+    width: min(200px, 100%);
+  }
+
+  .carousel__image {
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+  }
+}
