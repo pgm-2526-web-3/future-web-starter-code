@@ -1,0 +1,10 @@
+/* Aligneer de inhoud van de kaartjes */
+.columns {
+  /* Grid definieert het aantal rijen! */
+  /* Child zal de rijen 'overnemen', daarom subgrid. */
+  /* Individuele children kan je verplaatsen binnen de subgrid. */
+}
+
+.field {
+  /* Subgrid kan deze layout oplossen. */
+}

@@ -1,0 +1,13 @@
+.columns {
+  grid-template-rows: auto auto auto;
+
+  .columns__column {
+    display: grid;
+    grid-row: span 3;
+    grid-template-rows: subgrid;
+
+    a {
+      grid-row: 3 / 4;
+    }
+  }
+}

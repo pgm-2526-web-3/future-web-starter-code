@@ -1,0 +1,23 @@
+/**
+* CSS file with some starter css for exercises.
+*/
+.columns {
+  --pico-block-spacing-vertical: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.form {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-auto-rows: auto;
+  gap: 1rem;
+}
+
+.field {
+  display: grid;
+  grid-column: span 2;
+  grid-template-columns: max-content 1fr; /* Dit kan je oplossen met subgrid */
+  gap: 1rem;
+}

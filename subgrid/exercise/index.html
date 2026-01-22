@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starter Project</title>
+  </head>
+  <body data-theme="dark">
+    <nav class="container">
+      <ul>
+        <li><strong>Web 3</strong></li>
+      </ul>
+      <ul>
+        <li><a href="/" aria-current="page">Home</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="container">
+        <h1>Subgrid</h1>
+        <p>CSS Subgrid maakt het mogelijk om de gridstructuur van een parent-grid te delen met een child-grid, waardoor
+          beter uitgelijnde lay-outs mogelijk zijn. Klassieke use-case is het uitlijnen van labels en inputfield in
+          formulieren of het uitlijnen van content in cards (die in een grid staan).</p>
+      </section>
+
+      <hr>
+
+      <section class="columns container">
+        <article class="columns__column">
+          <h2>Korte titel</h2>
+          <p>Quisque rhoncus ex ut odio fermentum, et iaculis massa tempus.</p>
+          <a role="button" href="">Call to action</a>
+        </article>
+
+        <article class="columns__column">
+          <h2>Langere titel met meer inhoud</h2>
+          <p>Quisque rhoncus ex ut odio fermentum, et iaculis massa tempus. Rhoncus ex ut odio fermentum, et
+            iaculis massa tempus.</p>
+          <a role="button" href="">Call to action</a>
+        </article>
+
+        <article class="columns__column">
+          <p>Uitlijnen zonder titel</p>
+          <a role="button" href="">Call to action</a>
+        </article>
+      </section>
+
+      <hr>
+
+      <section class="container">
+        <h2>Formulieren met subgrid</h2>
+
+        <div>
+          <form class="form">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" />
+            </div>
+
+            <div class="field">
+              <label for="email">Email address</label>
+              <input id="email" />
+            </div>
+
+            <div class="field">
+              <label for="bio">Short bio</label>
+              <textarea id="bio"></textarea>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>
