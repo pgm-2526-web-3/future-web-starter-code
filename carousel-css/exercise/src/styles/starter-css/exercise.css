@@ -2,24 +2,27 @@
 * CSS file with some starter css for exercises.
 */
 
-html {
-  overflow-x: clip;
+html,
+body {
+  overflow-x: hidden;
 }
 
 ul li {
   list-style: none;
 }
 
+.swiper,
 .carousel {
   display: flex;
   gap: 1rem;
   padding: 0;
 
+  .swiper__item,
   .carousel__item {
-    flex: 0 0 auto;
-    width: min(200px, 100%);
+    flex: 0 0 200px;
   }
 
+  .swiper__image,
   .carousel__image {
     aspect-ratio: 2 / 3;
     object-fit: cover;

@@ -3,3 +3,8 @@
 
 /* On non-touch devices? Use a different approach! Grid or flex-wrapping. Do you want excellent scroll/drag support on desktop? Use a library! */
 /* Use previously learned media query to only have this on touch devices */
+
+/* ::scroll-button */
+/*::scroll-marker-group */
+/*::scroll-marker */
+/*::scroll-marker:target-current */

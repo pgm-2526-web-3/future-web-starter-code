@@ -1,6 +1,6 @@
-# Simple Starter Vite Project
+# CSS Carousels
 
-This starter project contains some basic styling and the possibility to have multiple pages in vite.
+[YouTube Tutorial](https://www.youtube.com/watch?v=gmI5nvzv170)
 
 ## Structure
 
