@@ -1,0 +1,13 @@
+/* Range syntax can ook in de container query (width > 25ch) */
+
+/* Standaard gebruiken we traditionele media queries maar dit geeft problemen wanneer de cards-container kleiner wordt. */
+.cards {
+  display: grid;
+
+  @media (width > 56rem) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+/* Container-type op de parent van het element of children wiens property je wil veranderen. */

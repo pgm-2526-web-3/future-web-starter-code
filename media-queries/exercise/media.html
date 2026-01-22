@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media en container queries</title>
+    <link rel="stylesheet" href="/src/styles/media.css" />
+  </head>
+  <body data-theme="dark">
+    <nav class="container">
+      <ul>
+        <li><strong>Web 3</strong></li>
+      </ul>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/media" aria-current="page">Media Queries</a></li>
+        <li><a href="/settings">Settings</a></li>
+        <li><a href="/container">Container Queries</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="container">
+        <h1>Media queries</h1>
+        <ol>
+          <li>Verander de achtergrondkleur bij verschillende schermgroottes.</li>
+          <li class="lead">Gebruik media om font-size van deze tekst aan te passen, doe dit nadien ook met
+            CSS-variabelen.</li>
+        </ol>
+      </div>
+
+      <section class="container">
+        <h2>Range</h2>
+        <small>Nieuwe schrijfwijze maakt dit beter leesbaar. <a href="https://caniuse.com/css-media-range-syntax">Can I
+            use?</a></small>
+        <hr>
+        <p class="tablet">Maak <code>--pico-color</code> groen tussen 800 en 1200 pixels.</p>
+      </section>
+
+      <section class="container">
+        <h2>Toestellen</h2>
+        <p class="print-hide">Verberg deze content wanneer er geprint wordt.</p>
+        <p class="touch-only">Toon deze content enkel op touch devices.</p>
+        <p class="no-touch-only">Toon deze content enkel op niet-touch devices.</p>
+        <p class="vertical-only">Toon deze content enkel bij verticale orientatie.</p>
+        <p class="horizontal-only">Toon deze content enkel bij horizontale orientatie.</p>
+      </section>
+    </main>
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>

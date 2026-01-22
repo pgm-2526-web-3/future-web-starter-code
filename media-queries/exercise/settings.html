@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media en container queries</title>
+    <link rel="stylesheet" href="/src/styles/mode.css" />
+  </head>
+  <body data-theme="dark">
+    <nav class="container">
+      <ul>
+        <li><strong>Web 3</strong></li>
+      </ul>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/media">Media Queries</a></li>
+        <li><a href="/settings" aria-current="page">Settings</a></li>
+        <li><a href="/container">Container Queries</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="container">
+        <h1>User settings?</h1>
+        <p>De voorkeuren van de gebruiker kunnen worden opgevraagd met media queries. Bijvoorbeeld of de gebruiker
+          een voorkeur heeft voor een licht of donker thema. Of dat de gebruiker bewegingsgevoelig is en animaties
+          liever vermijdt.</p>
+      </section>
+
+      <section class="container">
+        <h2>Card dat van kleur zal veranderen afhankelijk van de modus.</h2>
+        <p>Gebruik standaard de gebruikersvoorkeuren op het systeem, nadien kan je overschakelen met de knop.</p>
+        <button id="toggle-color-mode">Toggle color mode!</button>
+        <div class="card">
+          <p>Dit is een kaart die van kleur verandert afhankelijk van de modus. Standaard modus is licht, kan donker
+            worden als de gebruiker dat verkiest in zijn besturingssysteem. Maar kan ook met Javascript worden
+            aangepast.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="container">
+        <h2>Animaties</h2>
+        <p>Onderstaand doosje is een element dat geanimeerd wordt, schakel dit uit voor mensen die bewegingsgevoelig
+          zijn.</p>
+
+        <div class="moving-ball" aria-hidden="true"></div>
+      </section>
+
+    </main>
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>

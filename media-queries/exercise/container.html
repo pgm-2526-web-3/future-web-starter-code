@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media en container queries</title>
+    <link rel="stylesheet" href="/src/styles/container.css" />
+  </head>
+  <body data-theme="dark">
+    <nav class="container">
+      <ul>
+        <li><strong>Web 3</strong></li>
+      </ul>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/media">Media Queries</a></li>
+        <li><a href="/settings">Settings</a></li>
+        <li><a href="/container" aria-current="page">Container Queries</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="container">
+        <h1>Container Queries</h1>
+        <p>We stijlen op basis van een container in plaats van het scherm. We beschouwen dus de componenten als een
+          soort van mini-viewport.</p>
+      </section>
+
+      <section class="container">
+        <h2>Container die van layout verandert afhankelijk van zijn breedte</h2>
+        <p>Verander de breedte van de container door het venster te verkleinen of vergroten.</p>
+
+        <hr>
+
+        <div class="dashboard" style="display: block;">
+          <!-- Change to display: flex; to see the use case of container queries -->
+          <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <p>Dit is een zijbalk die alleen zichtbaar is bij een brede container. Als we op onze parent
+              <code>flex</code> plaatsen, dan zal de <code>cards</code> wrapper verkleinen. Hier komt het nuttige aspect
+              van container queries tevoorschijn.
+            </p>
+          </aside>
+
+          <div class="resizable-container">
+            <div class="cards">
+              <article class="cards__card">
+                <h3>Artikel 1</h3>
+                <p>Dit is het eerste artikel in de container die van layout verandert afhankelijk van zijn breedte. Dit
+                  willen we liefst niet dat dit verticaal is want is moeilijker leesbaar. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Dolorum mollitia earum nemo? Quam, exercitationem quae labore error
+                  quaerat autem soluta aliquam, odio, tempore dignissimos possimus unde blanditiis excepturi a numquam.
+                </p>
+              </article>
+
+              <article class="cards__card">
+                <h3>Artikel 2</h3>
+                <p>Dit is het tweede artikel in de container die van layout verandert afhankelijk van zijn breedte. Dit
+                  willen we liefst niet dat dit verticaal is want is moeilijker leesbaar. Lorem ipsum dolor, sit amet
+                  consectetur adipisicing elit. Asperiores quia corrupti blanditiis cum corporis dicta recusandae,
+                  dignissimos a laudantium adipisci optio quod iusto ipsam commodi, vitae consectetur amet dolor non.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="container">
+        <h2>Voorbeeld 2: Container Queries</h2>
+        <p>Zeer handig in functie van componenten, zelfde elementen op verschillende plaatsen in je UI. Ook is er een
+          container unit <code>cqi</code>, deze is een percentage van de container inline size.</p>
+
+        <h3>Belangrijke tekst in een grote container</h3>
+
+        <div class="dynamic-container">
+          <p class="lead">Dit is belangrijke tekst in een grote container.</p>
+        </div>
+
+        <hr>
+
+        <h3>Belangrijke tekst in grid waar de grote van de container verandert.</h3>
+
+        <div class="grid">
+          <div class="dynamic-container">
+            <p class="lead">Dit is belangrijke tekst in een grote container.</p>
+          </div>
+          <div class="dynamic-container">
+            <p class="lead">Dit is belangrijke tekst in een grote container.</p>
+          </div>
+          <div class="dynamic-container">
+            <p class="lead">Dit is belangrijke tekst in een grote container.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>
