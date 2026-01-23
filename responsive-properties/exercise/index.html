@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New properties</title>
+  </head>
+  <body data-theme="dark">
+    <nav class="container">
+      <ul>
+        <li><strong>Web 3</strong></li>
+      </ul>
+      <ul>
+        <li><a href="/" aria-current="page">Home</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="container">
+        <h1>Random properties</h1>
+        <p>Dit zijn CSS properties en values die je kunt gebruiken om je website responsief te maken zonder media
+          queries. Sommige van deze properties zijn moderner en zorgen voor 'kortere' code.</p>
+      </section>
+
+      <section class="container">
+        <h2><code>min()</code></h2>
+        <p>De <code>min()</code> functie kiest de <strong>kleinste</strong> waarde uit de opgegeven lijst en vergelijkt
+          dit met de breedte van de container/parent.</p>
+        <h3>Voorbeeld</h3>
+        <div class="box"></div>
+        <h3>Voorbeeld</h3>
+        <p>Padding op deze card kan ook met <code>min()</code> gezet worden.</p>
+        <div class="card-wrapper" style="  max-width: 400px;">
+          <!-- Change max-width to see effect. -->
+          <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati exercitationem impedit
+            quis veniam, veritatis quos possimus.</div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="container">
+        <h2><code>max()</code></h2>
+        <p>De <code>max()</code> functie kiest de <strong>grootste</strong> waarde uit de opgegeven lijst en vergelijkt
+          dit met de breedte van de container/parent.</p>
+        <h3>Voorbeeld</h3>
+        <div class="box"></div>
+        <h3>Voorbeeld</h3>
+        <p>Padding op deze tekst kan ook met <code>max()</code> gezet worden.</p>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati exercitationem impedit
+          quis veniam, veritatis quos possimus.</p>
+      </section>
+      <hr>
+
+      <section class="container">
+        <h2><code>minmax()</code> wordt gebruikt bij CSS grid en zal de min- en max-waarde van een grid track bepalen.
+        </h2>
+        <h3>Voorbeeld</h3>
+
+        <div class="custom-grid">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+          <div class="item">5</div>
+          <div class="item">6</div>
+        </div>
+
+      </section>
+      <hr>
+
+      <section class="container">
+        <h2><code>clamp()</code></h2>
+        <p>De <code>clamp()</code> functie zet een standaardwaarde om een waarde binnen een bereik te houden. Dit wordt
+          vaak gebruikt om responsieve waarden te definiëren en kan handig zijn bij typografie.</p>
+        <p>Combineer dit met <code>vw</code> om de grootte van tekst responsief te maken, let wel op voor schaling van
+          de browser! Combinatie met <code>rem</code> is nodig om dit accessible te maken.</p>
+        <h3>Voorbeeld</h3>
+        <p class="lead">This is a lead title, should be big and resposive.</p>
+      </section>
+      <hr>
+
+      <section class="container">
+        <h2><code>svh</code></h2>
+        <small>Je kan de server ook openen op je smartphone. Dit kan mogelijks geblokkeerd worden op het schoolnetwerk.
+          Eventueel gebruik je een hotspot van je smartphone of je thuisnetwerk om dit te testen.</small>
+        <pre>
+          $: npm run external
+        </pre>
+        <p>De <code>svh</code>-unit is een modern alternatief dat gebruikt wordt voor het meten van de viewport hoogte,
+          waarbij rekening wordt gehouden met browser UI-elementen zoals de adresbalk. Dit is relevant voor mobile.</p>
+
+        <h3>Voorbeeld</h3>
+        <div class="hero">This is a section where we will use with <code>vh</code> height</div>
+        <div class="hero hero--updated">This is a section where we will use <code>svh</code> height</div>
+      </section>
+
+      <hr>
+
+      <section class="container">
+        <h2><code>inline</code> en <code>block</code></h2>
+        <p>In plaats van <code>margin-left</code> en <code>margin-right</code> of <code>padding-left</code> en
+          <code>padding-right</code> kun je ook gebruik maken van <code>inline</code>-schrijfwijze.
+        </p>
+        <p>In plaats van <code>margin-top</code> en <code>margin-bottom</code> of <code>padding-top</code> en
+          <code>padding-bottom</code> kun je ook gebruik maken van <code>block</code>-schrijfwijze.
+        </p>
+        <p>Dit kan handig zijn om sneller en korter code te schrijven.</p>
+        <h3>Voorbeeld</h3>
+        <div class="box"></div>
+        <article class="article">
+          We centeren deze kaart en passen de padding aan.
+        </article>
+      </section>
+    </main>
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>

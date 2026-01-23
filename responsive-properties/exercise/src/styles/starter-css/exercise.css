@@ -1,0 +1,50 @@
+/**
+* CSS file with some starter css for exercises.
+*/
+
+.box {
+  width: 50px;
+  aspect-ratio: 1;
+  background-color: var(--pico-primary);
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  corner-shape: squircle;
+}
+
+.card {
+  background-color: var(--pico-primary);
+  color: var(--pico-primary-text);
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+.text {
+  background-color: var(--pico-primary);
+  color: var(--pico-background-color);
+  border-radius: 2px;
+}
+
+.custom-grid {
+  gap: 1rem;
+
+  .item {
+    background-color: var(--pico-primary);
+    color: var(--pico-background-color);
+    border-radius: 0.25rem;
+    padding: 1rem;
+    border: 1px dashed var(--active-color);
+  }
+}
+
+.hero {
+  background-color: var(--pico-primary);
+  color: var(--pico-background-color);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+pre {
+  padding-top: var(--pico-spacing);
+  margin-block: var(--pico-spacing);
+}
