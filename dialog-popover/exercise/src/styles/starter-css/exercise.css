@@ -1,0 +1,29 @@
+/**
+* CSS file with some starter css for exercises.
+*/
+
+.pico-override {
+  button {
+    all: unset;
+    font: inherit;
+    color: inherit;
+
+    text-decoration: dashed underline;
+    text-underline-offset: 6px;
+    cursor: pointer;
+  }
+}
+
+button[popovertarget] {
+  all: unset;
+  font: inherit;
+  color: inherit;
+
+  text-decoration: dashed underline;
+  text-underline-offset: 6px;
+  cursor: pointer;
+}
+
+[popover] {
+  margin: 0;
+}

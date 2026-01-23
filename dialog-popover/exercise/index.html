@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dialog</title>
+  </head>
+  <body data-theme="dark">
+    <nav class="container">
+      <ul>
+        <li><strong>Web 3</strong></li>
+      </ul>
+      <ul>
+        <li><a href="/" aria-current="page">Home</a></li>
+        <li><a href="/dialog.html">Dialog</a></li>
+        <li><a href="/popover.html">Popover</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="container">
+        <h1>Dialog en Popover API</h1>
+        <p>Popover is een element dat gebruikt wordt om overlays te maken, het woord 'popover' is een soort van
+          koepelterm. Dialog is namelijk een <i>soort van popover</i> die specifiek bedoeld is voor modals (grotere
+          vensters). Bij <code>popover</code> is het belangrijk dat je de correcte aria-attributes gebruikt.</p>
+        <a role="button" href="https://css-tricks.com/clarifying-the-relationship-between-popovers-and-dialogs/"
+          target="_blank" rel="noopener">Meer over Dialogs en Popovers</a>
+
+        <hr>
+
+        <h2>Verschillen?</h2>
+
+        <p>Een <code>dialog</code> <i>trapt</i> de focus en wordt voornamelijk gebruikt voor user-input (formulieren,
+          bevestigen van een actie, verwijderen, ...). Popover API blokkeert geen achterliggende inhoud en wordt eerder
+          gebruikt voor kleinere, contextuele informatie. Ook kan het
+          <code>popover</code>-attribuut gebruikt worden op ieder element en is er meer controle via JavaScript
+          mogelijk.
+        </p>
+
+        <a role="button"
+          href="https://medium.com/design-bootcamp/popups-dialogs-tooltips-and-popovers-ux-patterns-2-939da7a1ddcd"
+          target="_blank" rel="noopener">Verschillen Dialogs en Popovers</a>
+
+        <hr>
+
+        <figure>
+          <img
+            src="https://img.uxcel.com/cdn-cgi/image/format=auto/practices/modals-vs-non-modals-1689770260856/a-1697227152841-2x.jpg"
+            alt="Voorbeeld Modal" />
+          <figcaption>Voorbeeld van een modal (dialog)</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*2v8f9N6mhjYw3trRXRLwew.png"
+            alt="Voorbeeld Modal" />
+          <figcaption>Voorbeeld van een popup/popover</figcaption>
+        </figure>
+      </div>
+    </main>
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>
