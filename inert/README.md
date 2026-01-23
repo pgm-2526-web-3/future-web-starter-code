@@ -1,12 +1,7 @@
-# Bunch of responsive properties
+# Simple Starter Vite Project
 
-- `min` (example: padding, container)
-- `max`
-- `clamp` (responsive font-size)
-- `svh`
-- `margin-inline` or `margin-block`
-- `padding-inline` or `padding-block`
--
+This starter project contains some basic styling and the possibility to have multiple pages in vite.
+
 ## Structure
 
 Exercise folder is the main folder, you can create as many pages as you want. In the `src`-folder you'll find CSS and JS.

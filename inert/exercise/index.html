@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inert Exercise</title>
+  </head>
+  <body data-theme="dark">
+    <nav class="container">
+      <ul>
+        <li><strong>Web 3</strong></li>
+      </ul>
+      <ul>
+        <li><a href="/" aria-current="page">Home</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="container">
+        <h1>Inert</h1>
+        <p>Inert zal een element en zijn kinderen oninteractief maken, waardoor ze niet kunnen worden gefocust of
+          bediend. Dit is handig voor modals, dialogs, popups, FAQ.</p>
+      </div>
+
+      <section class="container">
+        <h2>Inert Attribute Voorbeeld</h2>
+        <div>
+          <label for="button1">Button 1</label>
+          <button id="button1">I am not inert</button>
+        </div>
+        <hr>
+        <div inert>
+          <label for="button2">Button 2</label>
+          <button id="button2">I am inert</button>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="container">
+        <h2>Inert Sidebar</h2>
+
+        <p>Gebruik de knop om de sidebar te openen en sluiten. Wanneer de sidebar gesloten is, is de hoofdinhoud inert
+          en
+          niet interactief.</p>
+
+        <button id="toggle-sidebar">Toggle Sidebar</button>
+
+        <hr>
+        <p>Plaats de sidebar fixed en zorgt dat ze de volledige hoogte van het scherm beslaat, en uit de rechterkant van
+          het scherm schuift. In JavaScript kan je dan de inert attribute toevoegen aan de hoofdinhoud wanneer de
+          sidebar open is. <code>inert</code> togglen in het enige dat je moet doen in JS, de rest kan in CSS.</p>
+
+        <aside id="sidebar" class="sidebar">
+          <h3>Sidebar Menu</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </aside>
+      </section>
+    </main>
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>
