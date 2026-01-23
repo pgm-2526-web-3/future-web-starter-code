@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starting Style</title>
+  </head>
+  <body data-theme="dark">
+    <nav class="container">
+      <ul>
+        <li><strong>Web 3</strong></li>
+      </ul>
+      <ul>
+        <li><a href="/" aria-current="page">Home</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="container">
+        <h1>Starting Style</h1>
+        <p>Animeren van niet-bestaande elementen.</p>
+      </section>
+
+      <section class="container">
+        <h2>Voorbeeld met lijstje met nieuwe elementen.</h2>
+        <p>
+          <button id="btn">Add Item</button>
+        </p>
+        <ul id="list">
+          <!-- Empty list -->
+        </ul>
+      </section>
+
+      <section class="container">
+        <h2>Voorbeeld popover</h2>
+
+        <button popovertarget="info">More info</button>
+        <aside popover id="info">Hier is er meer info over deze knop.</aside>
+      </section>
+
+      <section class="container">
+        <h2>Voorbeeld dropdown</h2>
+        <p>Maak een dropdown met Popover API, animeer met starting styles.</p>
+
+        <nav>
+          <ul>
+            <li><a href="#">Fake link</a></li>
+            <li><a href="#">Fake link</a></li>
+            <li><button>Settings</button></li>
+          </ul>
+        </nav>
+      </section>
+    </main>
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>

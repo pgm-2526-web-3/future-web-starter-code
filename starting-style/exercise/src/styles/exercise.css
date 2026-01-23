@@ -1,0 +1,19 @@
+/* Werkt niet :( */
+ul li {
+  opacity: 1;
+  transition: opacity 600ms ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: all 600ms ease;
+  transition-delay: 2s;
+}
+
+@starting-style {
+  opacity: 0;
+}
+
+/* Exit states? */
+/* transition-behavior: allow-discrete; */
+/* https://nerdy.dev/using-starting-style-and-transition-behavior-for-enter-and-exit-stage-effects  */
