@@ -1,0 +1,20 @@
+/**
+* Base CSS file to import Pico.css and set custom properties.
+*/
+
+@import "@picocss/pico/css/pico.min.css";
+
+:root {
+  --pico-block-spacing-vertical: 3rem;
+
+  --text-color: #ffffff;
+  --hover-color: #c6c7ff;
+  --active-color: #ffc400;
+}
+
+body,
+[data-theme="dark"] {
+  --pico-primary: var(--text-color);
+  --pico-primary-hover: var(--active-color);
+  --pico-primary-hover-underline: var(--active-color);
+}
