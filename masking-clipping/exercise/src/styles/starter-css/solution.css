@@ -1,0 +1,5 @@
+.dummy-section--angle {
+  --size: 50px;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--size)), 0% 100%);
+  margin-bottom: calc(var(--size) * -1);
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masking & Clipping</title>
+  </head>
+  <body data-theme="dark">
+    <nav class="container">
+      <ul>
+        <li><strong>Web 3</strong></li>
+      </ul>
+      <ul>
+        <li><a href="/" aria-current="page">Masking</a></li>
+        <li><a href="/clipping.html">Clipping</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="container">
+        <h1>Masking & Clipping</h1>
+        <p>In CSS kan je elementen masken en clippen om bepaalde delen zichtbaar of onzichtbaar te maken. Het verschil
+          tussen masking en clipping is dat masking gebruik maakt van een afbeelding, gradient of een SVG als 'mask',
+          terwijl clipping een rechthoek of andere (vectoriële) vorm gebruikt om het zichtbare gebied te bepalen.</p>
+      </section>
+
+      <section class="container">
+        <h2>Masking Voorbeeld - Album Art</h2>
+
+        <p>Hier kan je masking toepassen om de titel op het eind te laten vervagen.</p>
+
+        <div class="album">
+          <div class="album__title">
+            <strong class="album__text">This is why we can't have nice things</strong>
+          </div>
+
+          <p class="album__artist">Taylor Swift</p>
+
+          <!-- Voordeel van afbeelding hier in plaats van CSS? -->
+          <img class="album__image" alt="Album Cover" width="200" src="./assets/reputation.webp" loading="lazy" />
+        </div>
+      </section>
+
+
+      <section class="container">
+        <h2>Masking met een SVG</h2>
+        <p>Hier kunnen we een SVG gebruiken als mask om delen van de afbeelding te verbergen.</p>
+        <img class="mask-image" src="https://picsum.photos/id/684/600/400?blur=5" alt="">
+      </section>
+
+      <section class="container">
+        <h2>Masking bij gelimiteerde content.</h2>
+
+        <article>
+          <header>Iedereen wil de zonnebril van Macron: aandelen van luxemerk schieten de hoogte in</header>
+          <div class="limited-content">
+            <p>De spraakmakende zonnebril van Emmanuel Macron, waarmee de Franse president opviel op het Wereld
+              Economisch
+              Forum in Davos, is plots erg populair geworden. Zo schoten de aandelen van het bedrijf achter de luxebril
+              de
+              hoogte in en crashte de website zelfs even. De makers spreken van een "wow-effect".</p>
+            <p>De Franse president droeg de bril onder meer toen hij een speech gaf, volgens het Élysée om zijn ogen te
+              beschermen. Daardoor werden niet zozeer zijn woorden, maar vooral zijn nieuwe 'Top gun'-achtige look
+              massaal besproken. De beelden van Macron gingen onmiddellijk viraal en leidden al tot heel wat memes.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>

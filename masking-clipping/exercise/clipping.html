@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masking & Clipping</title>
+  </head>
+  <body data-theme="dark">
+    <nav class="container">
+      <ul>
+        <li><strong>Web 3</strong></li>
+      </ul>
+      <ul>
+        <li><a href="/">Masking</a></li>
+        <li><a href="/clipping.html" aria-current="page">Clipping</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="container">
+        <h1>Clipping</h1>
+        <p>In CSS kan je elementen masken en clippen om bepaalde delen zichtbaar of onzichtbaar te maken. Het verschil
+          tussen masking en clipping is dat masking gebruik maakt van een afbeelding, gradient of een SVG als 'mask',
+          terwijl clipping een rechthoek of andere (vectoriële) vorm gebruikt om het zichtbare gebied te bepalen.</p>
+      </section>
+
+      <section class="container">
+        <h2>Clipping Basis Voorbeeld</h2>
+
+        <img class="clipping-image" src="https://picsum.photos/id/684/600/400?blur=5" alt="Clipping Example" />
+      </section>
+
+      <section class="container">
+        <h2>Clipping Basis Voorbeeld</h2>
+
+        <figure class="animated-figure">
+          <img class="animated-figure__image" src="https://picsum.photos/id/688/400/400?blur=5"
+            alt="Clipping Example" />
+        </figure>
+      </section>
+
+      <hr>
+      <section class="container">
+        <h2>Dummy Sections Voorbeeld</h2>
+        <p>De eerste sectie moet een diagonale onderkant hebben,
+          gebruik clipping om dit effect te bereiken.</p>
+      </section>
+
+      <section class="dummy-section dummy-section--angle"></section>
+      <section class="dummy-section"></section>
+    </main>
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>
