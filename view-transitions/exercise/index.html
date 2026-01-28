@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Transitions</title>
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body data-theme="dark">
+    <nav class="container">
+      <ul>
+        <li><strong>Web 3</strong></li>
+      </ul>
+      <ul>
+        <li><a href="/" aria-current="page">Home</a></li>
+        <li><a href="/movies">Movies</a></li>
+        <li><a href="/music">Music</a></li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <section class="container">
+        <h1>View Transitions</h1>
+        <p>Animeren tussen pagina's? Hiervoor moeten we eerst het verschil kennen tussen MPA's en SPA's.</p>
+      </section>
+
+      <section class="container">
+        <h2>Wat zijn MPA's en SPA's?</h2>
+        <p>Een SPA is een Single Page Application waarbij de pagina niet volledig of <i>"echt"</i> wordt herladen bij
+          navigatie, maar alleen de benodigde content wordt bijgewerkt, dit via JavaScript.</p>
+        <p>Een MPA is een Multi Page Application waarbij elke pagina een aparte HTML-pagina is die volledig wordt
+          herladen bij navigatie. Dit is een zogenaamde 'hard reload'.</p>
+        <hr>
+
+        <h3>Animatie tussen pagina's</h3>
+
+        <p>Dankzij de nieuwe View Transitions API kunnen we nu animaties maken tussen pagina's zonder dat we een SPA
+          hoeven te gebruiken.</p>
+        <p>
+          <i>Merk op dat de HTML-pagina effectief verandert in de adresbalk.</i>
+        </p>
+
+        <figure class="grid">
+          <img loading="eager" src="https://i0.wp.com/barbajs.org/images/nextprev.gif?w=8000"
+            alt="Animatie die een overgang toont tussen twee pagina's" />
+          <img loading="eager" src="https://www.barbajs.org/images/grid.gif"
+            alt="Animatie die een overgang toont tussen twee pagina's" />
+        </figure>
+      </section>
+    </main>
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>

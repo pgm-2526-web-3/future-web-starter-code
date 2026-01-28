@@ -1,0 +1,22 @@
+#album-lover {
+  view-transition-name: album-lover;
+}
+
+#album-reputation {
+  view-transition-name: album-reputation;
+}
+
+#album-tpd {
+  view-transition-name: album-tpd;
+}
+
+#album-midnights {
+  view-transition-name: album-midnights;
+}
+
+/**
+* Dit werkt niet? Waarom niet?
+* [id^="album-"] {
+*   view-transition-name: attr(id string);
+* }
+**/

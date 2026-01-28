@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Midnights</title>
+        <!-- Note: The main.css file is included here for consistent styling across pages, not included in JS because of Vite config -->
+        <link rel="stylesheet" href="/src/styles/main.css" />
+
+    </head>
+    <body>
+        <nav class="container">
+            <ul>
+                <li><strong>Web 3</strong></li>
+            </ul>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/movies">Movies</a></li>
+                <li><a href="/music" aria-current="page">Music</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <header class="container">
+                <nav aria-label="breadcrumb">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/music.html">Music</a></li>
+                        <li aria-current="page">Midnights</li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section class="container">
+                <div class="grid">
+                    <img loading="eager" id="album-midnights" class="rounded" alt="Album Cover" width="200"
+                        src="../assets/midnights.webp" loading="lazy" />
+                    <article>
+                        <header>Midnights</header>
+                        <p><strong>Artist:</strong> Taylor Swift</p>
+                        <p><strong>Release Date:</strong> October 21, 2022</p>
+                        <p><strong>Genre:</strong> Pop</p>
+                        <p><strong>Description:</strong> Midnights is Taylor Swift's tenth studio album, featuring a
+                            blend
+                            of introspective lyrics and catchy melodies that explore themes of love, loss, and
+                            self-discovery.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <script type="module" src="/src/scripts/main.js"></script>
+    </body>
+</html>
