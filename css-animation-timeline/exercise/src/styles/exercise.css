@@ -28,6 +28,7 @@
   animation: rotate linear both;
   animation-timeline: scroll();
 }
+
 /* Scroll progress bar */
 @keyframes scrollProgress {
   from {
