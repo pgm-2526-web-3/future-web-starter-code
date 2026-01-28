@@ -1,6 +1,83 @@
+/* =============================================================================================== */
+/* Modal */
+/* =============================================================================================== */
 /* Stylen van modal? https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::backdrop */
 /* Backdrop werkt enkel wanneer je de dialog opent via JavaScript */
-/* Extra (volgend hoofdstuk): Animeren? @starting-style */
+#modal-1::backdrop {
+  background-color: rgba(18, 18, 31, 0.205);
+  backdrop-filter: blur(20px);
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
 
-/* Anchor positioning met popover  */
+  @starting-style {
+    opacity: 0;
+  }
+}
+
 /* Extra (volgend hoofdstuk): Animeren? @starting-style  */
+#modal-1 {
+  backdrop-filter: none;
+  background-color: transparent;
+  opacity: 1;
+  transform: translateY(0);
+  transition: 0.3s ease 0.1s;
+  transition-property: opacity, transform;
+
+  @starting-style {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+}
+
+/* =============================================================================================== */
+/* Popover */
+/* =============================================================================================== */
+/* Anchor positioning met popover  */
+#popover-button {
+  anchor-name: --popover-button;
+  transition: color 0.2s;
+
+  &[aria-expanded="true"] {
+    color: var(--active-color);
+  }
+}
+
+#popover-1 {
+  position-anchor: --popover-button;
+  position: absolute;
+  top: calc(anchor(top) + 1.4rem);
+  left: anchor(left);
+}
+
+/* Extra (volgend hoofdstuk): Animeren? @starting-style  */
+#popover-1 {
+  @starting-style {
+    opacity: 0;
+    scale: 0.9;
+    translate: 0 -1rem;
+  }
+
+  transform-origin: top left;
+  animation: openPopover 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes openPopover {
+  0% {
+    opacity: 0;
+    scale: 0.9;
+    translate: 0 -1rem;
+  }
+  60% {
+    opacity: 1;
+    scale: 1.05;
+    translate: 0 0.3rem;
+  }
+  80% {
+    scale: 0.98;
+    translate: 0 -0.1rem;
+  }
+  100% {
+    scale: 1;
+    translate: 0 0;
+  }
+}

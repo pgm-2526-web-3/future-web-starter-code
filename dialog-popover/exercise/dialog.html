@@ -1,43 +1,54 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Detail Page Project</title>
-    </head>
-    <body>
-        <nav class="container">
-            <ul>
-                <li><strong>Web 3</strong></li>
-            </ul>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/dialog.html" aria-current="page">Dialog</a></li>
-                <li><a href="/popover.html">Popover</a></li>
-            </ul>
-        </nav>
 
-        <main>
-            <section class="container">
-                <h1>Dialog</h1>
-                <button>Open modal</button>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Page Project</title>
+</head>
 
-                <!-- Maak hier een dialog. Open attribuut kan gebruikt worden om de dialog standaard open te zetten. JavaScript kan gebruikt worden om dit te toggelen.PicoCSS heeft deze al gestyled. -->
-            </section>
+<body>
+    <nav class="container">
+        <ul>
+            <li><strong>Web 3</strong></li>
+        </ul>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/dialog.html" aria-current="page">Dialog</a></li>
+            <li><a href="/popover.html">Popover</a></li>
+        </ul>
+    </nav>
 
-            <hr>
+    <main>
+        <section class="container">
+            <h1>Dialog</h1>
+            <button data-modal="modal-1">Open modal</button>
 
-            <section class="container">
-                <p>In JavaScript kan je een dialog openen en sluiten met de open attribuut. We selecteren hiervoor de
-                    gepaste modal, omdat we efficient programmeren hardcoderen we de ID niet in JavaScript maar
-                    gebruiken we een data attribuut op de button.</p>
+            <dialog id="modal-1" closedby="any">
+                <article>
+                    <h2>Modal Title</h2>
+                    <p>This is a modal dialog. Click the button below to close it.</p>
+                    <footer>
+                        <button autoclose data-close="modal-1">Close</button>
+                    </footer>
+                </article>
+            </dialog>
+        </section>
 
-                <p>
-                    <small>Maak onder deze tekst een nieuwe modal en knop om deze te openen. Plaats een attribuut
-                        <code>data-modal</code> op de button die de gepaste modal opent (werkt dynamisch).</small>
-                </p>
-            </section>
-        </main>
-        <script type="module" src="/src/scripts/main.js"></script>
-    </body>
+        <hr>
+
+        <section class="container">
+            <p>In JavaScript kan je een dialog openen en sluiten met de open attribuut. We selecteren hiervoor de
+                gepaste modal, omdat we efficient programmeren hardcoderen we de ID niet in JavaScript maar
+                gebruiken we een data attribuut op de button.</p>
+
+            <p>
+                <small>Maak onder deze tekst een nieuwe modal en knop om deze te openen. Plaats een attribuut
+                    <code>data-modal</code> op de button die de gepaste modal opent (werkt dynamisch).</small>
+            </p>
+        </section>
+    </main>
+    <script type="module" src="/src/scripts/main.js"></script>
+</body>
+
 </html>

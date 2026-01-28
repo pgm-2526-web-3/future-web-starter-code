@@ -1,35 +1,38 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Detail Page Project</title>
-    </head>
-    <body>
-        <nav class="container">
-            <ul>
-                <li><strong>Web 3</strong></li>
-            </ul>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/dialog.html">Dialog</a></li>
-                <li><a href="/popover.html" aria-current="page">Popover</a></li>
-            </ul>
-        </nav>
 
-        <main class="pico-override">
-            <div class="container">
-                <h1>Popovers</h1>
-                <p>Popovers gaan hand in hand met <code>anchor positioning</code>.</p>
-                <p>Lorem ipsum dolor, sit amet <button>klik hier</button> adipisicing elit.
-                    Praesentium
-                    delectus
-                    sunt eligendi deserunt alias distinctio doloribus animi, fugiat expedita deleniti nemo, esse odit
-                    nisi architecto itaque omnis consectetur quia nihil?</p>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Page Project</title>
+</head>
 
-                <div>Tooltip informatie getoond bij klikken op popover.</div>
-            </div>
-        </main>
-        <script type="module" src="/src/scripts/main.js"></script>
-    </body>
+<body>
+    <nav class="container">
+        <ul>
+            <li><strong>Web 3</strong></li>
+        </ul>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/dialog.html">Dialog</a></li>
+            <li><a href="/popover.html" aria-current="page">Popover</a></li>
+        </ul>
+    </nav>
+
+    <main class="pico-override">
+        <div class="container">
+            <h1>Popovers</h1>
+            <p>Popovers gaan hand in hand met <code>anchor positioning</code>.</p>
+            <p>Lorem ipsum dolor, sit amet <button id="popover-button" data-popover="popover-1" aria-haspopup="true" aria-expanded="false" aria-controls="popover-1">klik hier</button> adipisicing elit.
+                Praesentium
+                delectus
+                sunt eligendi deserunt alias distinctio doloribus animi, fugiat expedita deleniti nemo, esse odit
+                nisi architecto itaque omnis consectetur quia nihil?</p>
+
+            <div popover id="popover-1" role="tooltip">Tooltip informatie getoond bij klikken op popover.</div>
+        </div>
+    </main>
+    <script type="module" src="/src/scripts/main.js"></script>
+</body>
+
 </html>
