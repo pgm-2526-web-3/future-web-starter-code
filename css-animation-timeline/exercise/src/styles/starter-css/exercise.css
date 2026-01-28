@@ -1,0 +1,32 @@
+/**
+* CSS file with some starter css for exercises.
+*/
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: var(--active-color);
+}
+
+.box {
+  width: min(200px, 90vw);
+  aspect-ratio: 1;
+  background-color: var(--pico-primary);
+  border-radius: 10rem;
+  corner-shape: squircle;
+  margin-block: 2rem;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, calc(33% - 1rem)));
+  gap: 1rem;
+
+  .box {
+    width: 100%;
+    margin: 0;
+  }
+}
