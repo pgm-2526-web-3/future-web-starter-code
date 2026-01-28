@@ -1,5 +1,0 @@
-@import "./starter-css/base.css" layer(base);
-@import "./starter-css/exercise.css" layer(exercise-starter);
-@import "./exercise.css" layer(exercise);
-
-@layer base, exercise-starter, exercise;
