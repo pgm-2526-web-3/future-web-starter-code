@@ -1,19 +1,48 @@
 /**
-* Nesting is handig, kan ook met combinatieselectoren zoals +, >, ~
-*/
-
-/**
-* Wat met de ampersand (&) selector?
-*/
-
-/**
 * Niet over-nesten! Maximaal 3 niveaus diep.
 */
+.card {
+  a {
+    color: var(--active-color);
+  }
+
+  a[role="button"] {
+    background-color: transparent;
+    border-color: var(--active-color);
+    color: var(--active-color);
+
+    /**
+    * Wat met de ampersand (&) selector?
+    */
+    &:hover {
+      background-color: hsl(from var(--active-color) h s l / 0.05);
+    }
+  }
+
+  /**
+  * Nesting is handig, kan ook met combinatieselectoren zoals +, >, ~
+  */
+  + p {
+    background-color: var(--active-color);
+    color: var(--pico-background-color);
+  }
+}
 
 /**
 * Geen concatenatie van selectors mogelijk in pure CSS (Kan wel met preprocessors zoals Sass). Bijvoorbeeld met BEM gaat dit niet.
 */
+/* Dit genereert dus géén '.button--error': */
+/* .button {
+  &--error {
+    background: red;
+  }
+} */
 
 /*
 * Nesting met media queries!
 */
+.lead {
+  @media screen and (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
