@@ -16,7 +16,13 @@ export default defineConfig({
     root: pagesDir, // serve files from the pages folder
     build: {
         rollupOptions: {
-            input
+            input: {
+                ...input,
+                lover: resolve(pagesDir, 'music/lover.html'),
+                midnights: resolve(pagesDir, 'music/midnights.html'),
+                reputation: resolve(pagesDir, 'music/reputation.html'),
+                tpd: resolve(pagesDir, 'music/tpd.html')
+            }
         }
     }
 });
