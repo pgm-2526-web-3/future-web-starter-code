@@ -29,4 +29,4 @@ A collection of small starter projects and exercises for web development practic
 ## Author
 
 - [Adriaan Glibert](https://status-200.be)
-- [Sjouwke Van Parys](https://sjouwke.framer.website/)
+- [Sjouwke Van Parys](https://sjouwke.be/)
