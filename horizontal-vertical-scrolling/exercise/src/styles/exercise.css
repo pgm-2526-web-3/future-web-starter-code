@@ -1,18 +1,113 @@
 /* Anchor tags? */
 
 html {
-  scroll-behavior: auto !important; /* Disable smooth scrolling to show students (built into user agent) */
-
+  scroll-behavior: smooth;
   /* Padding top, bijvoorbeeld wanneer navbar fixed is? */
 }
 
+/* =============================================================================================== */
+/* Swiper */
+/* =============================================================================================== */
 /* Make sure you can scroll, you need overflow*/
 /* Scroll snapping on parent container, scroll aligning on children */
 
 /* On non-touch devices? Use a different approach! Grid or flex-wrapping. Do you want excellent scroll/drag support on desktop? Use a library! */
 /* Use previously learned media query to only have this on touch devices */
 
+.swiper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  scroll-snap-type: none;
+
+  @media (pointer: coarse) and (max-width: 500px) {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+  }
+}
+
+.swiper__item {
+  scroll-snap-align: start;
+}
+
+/* =============================================================================================== */
+/* Carousel */
+/* =============================================================================================== */
 /* ::scroll-button */
 /*::scroll-marker-group */
 /*::scroll-marker */
 /*::scroll-marker:target-current */
+
+.carousel {
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  anchor-name: --swiper;
+  scroll-snap-type: x mandatory;
+  scroll-marker-group: after;
+
+  &::scroll-button(right),
+  &::scroll-button(left) {
+    content: "→";
+    border: none;
+    background-color: var(--pico-secondary);
+    color: var(--pico-secondary-contrast);
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: gilroy, sans-serif;
+    position: absolute;
+    position-anchor: --swiper;
+    position-area: right center;
+    translate: -50%;
+  }
+
+  &::scroll-button(left) {
+    content: "←";
+    position-area: left center;
+    translate: 50%;
+  }
+
+  &::scroll-button(left):disabled,
+  &::scroll-button(right):disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &::scroll-marker-group {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
+
+.carousel__item {
+  scroll-snap-align: start;
+
+  &::scroll-marker {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background-color: var(--pico-secondary);
+  }
+
+  &::scroll-marker:target-current {
+    background-color: var(--pico-primary);
+  }
+
+  @media screen and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+  }
+}
