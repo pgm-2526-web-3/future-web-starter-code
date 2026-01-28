@@ -1,44 +1,47 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Starter Project</title>
-  </head>
-  <body data-theme="dark">
-    <main>
-      <section class="container">
-        <h1>Focus-styles</h1>
-        <p>Quick guide to Focus-styles</p>
-      </section>
 
-      <section class="container">
-        <h2>Focus en focus-within en placeholder-shown</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starter Project</title>
+</head>
 
-        <form class="form">
-          <fieldset>
-            <label>
-              First name
-              <input name="first_name" placeholder="First name" autocomplete="given-name" />
-            </label>
-            <label>
-              Email
-              <input type="email" name="email" placeholder="Email" autocomplete="email" />
-            </label>
-          </fieldset>
-        </form>
-      </section>
+<body data-theme="dark">
+  <main>
+    <section class="container">
+      <h1>Focus-styles</h1>
+      <p>Quick guide to Focus-styles</p>
+    </section>
 
-      <hr>
+    <section class="container">
+      <h2>Focus en focus-within en placeholder-shown</h2>
 
-      <section class="container">
-        <h2>Focus-visible</h2>
+      <form class="form">
+        <fieldset>
+          <label>
+            <span>First name</span>
+            <input name="first_name" placeholder="First name" autocomplete="given-name" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="Email" autocomplete="email" />
+          </label>
+        </fieldset>
+      </form>
+    </section>
 
-        <button>Default styles zijn ok!</button><br />
-        <button class="focus-only">:focus stijlt te vaak, ook bij klik!</button><br />
-        <button class="focus-visible-only">:focus-visible stijlt alleen bij toetsenbord!</button>
-      </section>
-    </main>
-    <script type="module" src="/src/scripts/main.js"></script>
-  </body>
+    <hr>
+
+    <section class="container">
+      <h2>Focus-visible</h2>
+
+      <button>Default styles zijn ok!</button><br />
+      <button class="focus-only">:focus stijlt te vaak, ook bij klik!</button><br />
+      <button class="focus-visible-only">:focus-visible stijlt alleen bij toetsenbord!</button>
+    </section>
+  </main>
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+
 </html>

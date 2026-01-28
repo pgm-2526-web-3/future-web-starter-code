@@ -1,10 +1,70 @@
+:root {
+  --ui-error: rgb(223, 41, 0);
+  --ui-focus: rgb(0, 123, 255);
+  --ui-active: rgb(255, 157, 0);
+  --color-contrast: rgb(0, 0, 0);
+}
+
 /* Waarom zijn focus-stijlen belangrijk? Niet uitzetten! */
 
 /* Focus-within - Geef het label een andere kleur! */
-
+label:focus-within {
+  color: var(--ui-active);
+}
 
 /* Tonen dat een veld nog niet is ingevuld met placeholder-shown */
+label:has(input:placeholder-shown),
+label:has(input:empty) {
+  color: var(--ui-error);
+
+  input {
+    border-color: var(--ui-error);
+  }
+}
 
 /* Placeholder shown? Maak een form label animatie: https://blog.surjithctly.in/creating-a-floating-label-input-form-using-tailwindcss-no-javascript  */
+input::placeholder {
+  color: transparent;
+}
+
+label {
+  position: relative;
+
+  span {
+    position: absolute;
+    top: 0.95rem;
+    left: 1.1rem;
+    font-size: 1rem;
+    transition: 0.2s ease;
+    transition-property: transform, font-size, color;
+  }
+
+  input {
+    padding: 1.2rem 1rem 0.5rem;
+    font-size: 1rem;
+  }
+
+  &:has(input:focus),
+  &:has(input:not(:placeholder-shown)) {
+    span {
+      transform: translateY(-0.45rem);
+      font-size: 0.7rem;
+      color: var(--color-contrast);
+    }
+  }
+}
 
 /* Focus-visible - Maak de focus outline duidelijker! */
+button {
+  transition: outline 0.2s ease-in-out;
+}
+
+.focus-only:focus {
+  outline: 0.2em solid var(--ui-focus);
+  outline-offset: 0.25em;
+}
+
+.focus-visible-only:focus-visible {
+  outline: 0.15rem dotted var(--ui-focus);
+  outline-offset: 0.25em;
+}
