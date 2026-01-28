@@ -1,80 +1,83 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Animations and Transitions</title>
-  </head>
-  <body data-theme="dark">
-    <nav class="container">
-      <ul>
-        <li><strong>Web 3</strong></li>
-      </ul>
-      <ul>
-        <li><a href="/" aria-current="page">Home</a></li>
-        <li><a href="/detail">Detail</a></li>
-      </ul>
-    </nav>
 
-    <aside class="scroll-progress"></aside>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Animations and Transitions</title>
+</head>
 
-    <main>
-      <section class="container">
-        <h1>CSS Animations and Transitions</h1>
-        <p>We kunnen kleine animaties en overgangen maken met CSS om de gebruikerservaring te verbeteren.</p>
-        <p>Maak het onderstaande doosje zichtbaar met een animatie (bij het laden van de pagina) en beweeg die ook van
-          <code>y: 10px</code> naar <code>y:0px</code>. Dit heet een <i>fade-in-up</i> animatie.
-        </p>
+<body data-theme="dark">
+  <nav class="container">
+    <ul>
+      <li><strong>Web 3</strong></li>
+    </ul>
+    <ul>
+      <li><a href="/" aria-current="page">Home</a></li>
+      <li><a href="/detail">Detail</a></li>
+    </ul>
+  </nav>
 
-        <div class="box box--fade-in-load" aria-hidden="true"></div>
-      </section>
+  <aside class="scroll-progress"></aside>
 
-      <section class="container">
-        <h2>CSS Animation Timeline</h2>
-        <p>De standaard animatie tijdlijn baseert zich op de <i>tijd</i>. Dankzij de nieuwe
-          <code>animation-timeline</code> kunnen we de vooruitgang van een animatie ook laten afhangen van andere
-          factoren dan tijd zoals <code>scroll</code> (% dat de pagina of container gescrolled heeft) en
-          <code>view</code> (% dat een element zichtbaar is in het scherm).
-        </p>
-        <h3>Scroll-gebaseerde animatie</h3>
-        <p>
-          Maak een animatie die het doosje laat roteren naarmate je naar beneden scrolt op de pagina.
-        </p>
-        <div class="box box--rotate-on-scroll" aria-hidden="true"></div>
+  <main>
+    <section class="container">
+      <h1>CSS Animations and Transitions</h1>
+      <p>We kunnen kleine animaties en overgangen maken met CSS om de gebruikerservaring te verbeteren.</p>
+      <p>Maak het onderstaande doosje zichtbaar met een animatie (bij het laden van de pagina) en beweeg het ook van
+        <code>y: 10px</code> naar <code>y:0px</code>. Dit heet een <i>fade-in-up</i> animatie.
+      </p>
 
-        <p>Maak nadien de <code>scroll-progress</code> balk zichtbaar die de voortgang van het scrollen toont op de
-          pagina.</p>
+      <div class="box box--fade-in-load" aria-hidden="true"></div>
+    </section>
 
-        <hr>
+    <section class="container">
+      <h2>CSS Animation Timeline</h2>
+      <p>De standaard animatie tijdlijn baseert zich op de <i>tijd</i>. Dankzij de nieuwe
+        <code>animation-timeline</code> kunnen we de vooruitgang van een animatie ook laten afhangen van andere
+        factoren dan tijd zoals <code>scroll</code> (% dat de pagina of container gescrolled heeft) en
+        <code>view</code> (% dat een element zichtbaar is in het scherm).
+      </p>
+      <h3>Scroll-gebaseerde animatie</h3>
+      <p>
+        Maak een animatie die het doosje laat roteren naarmate je naar beneden scrolt op de pagina.
+      </p>
+      <div class="box box--rotate-on-scroll" aria-hidden="true"></div>
 
-        <h3>View-gebaseerde animatie</h3>
-        <p>
-          Maak een animatie die de doosjes laat infaden (zie eerste animatie, die kan je hergebruiken) naarmate het
-          doosje meer zichtbaar wordt in het scherm.
-        </p>
-        <p>
-          Tip: gebruik <code>animation-timeline: view()</code> en experimenteer met de <code>view-timeline-inset</code>
-          en
-          <code>animation-range</code> om te bepalen wanneer de animatie moet starten en stoppen.
-        </p>
+      <p>Maak nadien de <code>scroll-progress</code> balk zichtbaar die de voortgang van het scrollen toont op de
+        pagina.</p>
 
-        <div class="boxes">
-          <div class="box box--scale-on-view" aria-hidden="true"></div>
-          <div class="box box--scale-on-view" aria-hidden="true"></div>
-          <div class="box box--scale-on-view" aria-hidden="true"></div>
-          <div class="box box--scale-on-view" aria-hidden="true"></div>
-          <div class="box box--scale-on-view" aria-hidden="true"></div>
-          <div class="box box--scale-on-view" aria-hidden="true"></div>
-          <div class="box box--scale-on-view" aria-hidden="true"></div>
-          <div class="box box--scale-on-view" aria-hidden="true"></div>
-          <div class="box box--scale-on-view" aria-hidden="true"></div>
-          <div class="box box--scale-on-view" aria-hidden="true"></div>
-          <div class="box box--scale-on-view" aria-hidden="true"></div>
-          <div class="box box--scale-on-view" aria-hidden="true"></div>
-        </div>
+      <hr>
 
-      </section>
-    </main>
-    <script type="module" src="/src/scripts/main.js"></script>
-  </body>
+      <h3>View-gebaseerde animatie</h3>
+      <p>
+        Maak een animatie die de doosjes laat infaden (zie eerste animatie, die kan je hergebruiken) naarmate het
+        doosje meer zichtbaar wordt in het scherm.
+      </p>
+      <p>
+        Tip: gebruik <code>animation-timeline: view()</code> en experimenteer met de <code>view-timeline-inset</code>
+        en
+        <code>animation-range</code> om te bepalen wanneer de animatie moet starten en stoppen.
+      </p>
+
+      <div class="boxes">
+        <div class="box box--scale-on-view" aria-hidden="true"></div>
+        <div class="box box--scale-on-view" aria-hidden="true"></div>
+        <div class="box box--scale-on-view" aria-hidden="true"></div>
+        <div class="box box--scale-on-view" aria-hidden="true"></div>
+        <div class="box box--scale-on-view" aria-hidden="true"></div>
+        <div class="box box--scale-on-view" aria-hidden="true"></div>
+        <div class="box box--scale-on-view" aria-hidden="true"></div>
+        <div class="box box--scale-on-view" aria-hidden="true"></div>
+        <div class="box box--scale-on-view" aria-hidden="true"></div>
+        <div class="box box--scale-on-view" aria-hidden="true"></div>
+        <div class="box box--scale-on-view" aria-hidden="true"></div>
+        <div class="box box--scale-on-view" aria-hidden="true"></div>
+      </div>
+
+    </section>
+  </main>
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+
 </html>
