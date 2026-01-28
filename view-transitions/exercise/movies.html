@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Movies</title>
+        <link rel="stylesheet" href="/src/styles/main.css" />
+
+    </head>
+    <body>
+        <nav class="container">
+            <ul>
+                <li><strong>Web 3</strong></li>
+            </ul>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/movies" aria-current="page">Movies</a></li>
+                <li><a href="/music">Music</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <section class="container">
+                <h1>Movies</h1>
+                <p>This is a movies page.</p>
+
+                <hr>
+
+                <p>Je kan simpele view transition toevoegen tussen pagina's dankzij de View Transitions API. Standaard
+                    zal er een fade effect zijn, maar je kan dit aanpassen met CSS en jouw eigen animaties op de
+                    pseudo-elementen.</p>
+                <p>In de inspector kan je de view transition pseudo-elementen bekijken. (Open de animations tab om de
+                    animaties te zien. <code>Cmd/Ctrl + SHIFT + P</code>)</p>
+                <p>
+                    Merk op dat standaard de volledige pagina wordt geanimeerd <code>(root)</code>. Je kan dit aanpassen
+                    door specifieke
+                    elementen te markeren met <code>view-transition-name</code> in CSS of via JavaScript.
+                </p>
+            </section>
+        </main>
+        <script type="module" src="/src/scripts/main.js"></script>
+    </body>
+</html>

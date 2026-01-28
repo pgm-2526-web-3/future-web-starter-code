@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Music</title>
+        <!-- Note: The main.css file is included here for consistent styling across pages, not included in JS because of Vite config -->
+        <link rel="stylesheet" href="/src/styles/main.css" />
+
+    </head>
+    <body>
+        <nav class="container">
+            <ul>
+                <li><strong>Web 3</strong></li>
+            </ul>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/movies">Movies</a></li>
+                <li><a href="/music" aria-current="page">Music</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <section class="container">
+                <h1>Music</h1>
+                <p>This is a music page.</p>
+                <p>Zorg er voor dat enkel de main content geanimeerd wordt en de navigatie niet.</p>
+            </section>
+
+            <section class="container">
+                <h2>Taylor Swift Discography</h2>
+
+                <div class="columns">
+                    <a href="./music/midnights.html" class="album">
+                        <div class="album__title">
+                            <strong class="album__text">Midnights</strong>
+                        </div>
+
+                        <p class="album__artist">Taylor Swift</p>
+
+                        <!-- Voordeel van afbeelding hier in plaats van CSS? -->
+                        <img loading="eager" id="album-midnights" class="album__image" alt="Album Cover" width="200"
+                            src="./assets/midnights.webp" loading="lazy" />
+                    </a>
+                    <a href="./music/tpd.html" class="album">
+                        <div class="album__title">
+                            <strong class="album__text">The Tortured Poets Department</strong>
+                        </div>
+
+                        <p class="album__artist">Taylor Swift</p>
+
+                        <!-- Voordeel van afbeelding hier in plaats van CSS? -->
+                        <img loading="eager" id="album-tpd" class="album__image" alt="Album Cover" width="200"
+                            src="./assets/tpd.webp" loading="lazy" />
+                    </a>
+                    <a href="./music/reputation.html" class="album">
+                        <div class="album__title">
+                            <strong class="album__text">Reputation</strong>
+                        </div>
+
+                        <p class="album__artist">Taylor Swift</p>
+
+                        <!-- Voordeel van afbeelding hier in plaats van CSS? -->
+                        <img loading="eager" id="album-reputation" class="album__image" alt="Album Cover" width="200"
+                            src="./assets/reputation.webp" loading="lazy" />
+                    </a>
+                    <a href="./music/lover.html" class="album">
+                        <div class="album__title">
+                            <strong class="album__text">Lover</strong>
+                        </div>
+
+                        <p class="album__artist">Taylor Swift</p>
+
+                        <!-- Voordeel van afbeelding hier in plaats van CSS? -->
+                        <img loading="eager" id="album-lover" class="album__image" alt="Album Cover" width="200"
+                            src="./assets/lover.webp" loading="lazy" />
+                    </a>
+                </div>
+            </section>
+        </main>
+        <script type="module" src="/src/scripts/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+@view-transition {
+  navigation: auto;
+}
+
+// main {
+//   view-transition-name: main;
+// }
+
+// Changed 'root' to 'main' to just animate the main content.
+::view-transition-group(root) {
+  animation-duration: 200ms;
+}
+
+// Changed 'root' to 'main' to just animate the main content.
+::view-transition-old(root) {
+  animation-name: slide-out-to-left;
+}
+
+// Changed 'root' to 'main' to just animate the main content.
+::view-transition-new(root) {
+  animation-name: slide-in-from-right;
+}
+
+@keyframes slide-in-from-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out-to-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lover</title>
+        <!-- Note: The main.css file is included here for consistent styling across pages, not included in JS because of Vite config -->
+        <link rel="stylesheet" href="/src/styles/main.css" />
+
+    </head>
+    <body>
+        <nav class="container">
+            <ul>
+                <li><strong>Web 3</strong></li>
+            </ul>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/movies">Movies</a></li>
+                <li><a href="/music" aria-current="page">Music</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <header class="container">
+                <nav aria-label="breadcrumb">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/music.html">Music</a></li>
+                        <li aria-current="page">Lover</li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section class="container">
+                <div class="grid">
+                    <img loading="eager" id="album-lover" class="rounded" alt="Album Cover" width="200"
+                        src="../assets/lover.webp" loading="lazy" />
+                    <article>
+                        <header>Lover</header>
+                        <p><strong>Artist:</strong> Taylor Swift</p>
+                        <p><strong>Release Date:</strong> August 23, 2019</p>
+                        <p><strong>Genre:</strong> Pop</p>
+                        <p><strong>Description:</strong> Lover is Taylor Swift's seventh studio album, featuring a blend
+                            of romantic lyrics and upbeat melodies that explore themes of love, happiness, and
+                            self-acceptance.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <script type="module" src="/src/scripts/main.js"></script>
+    </body>
+</html>
