@@ -1,1 +1,61 @@
-/**/
+body {
+  background: rgb(36, 57, 3);
+}
+
+@media (30rem <= width < 60rem) {
+  body {
+    background-color: rgb(44, 10, 75);
+  }
+}
+
+@media (min-width: 60rem) {
+  body {
+    background-color: rgb(68, 46, 5);
+  }
+}
+
+@media (800px <= width < 1200px) {
+  :root {
+    --pico-color: rgb(255, 218, 145);
+  }
+
+  body {
+    background-color: rgb(39, 8, 68);
+  }
+}
+
+@media print {
+  .print-hide {
+    display: none;
+  }
+}
+
+.touch-only {
+  display: none;
+}
+
+@media (pointer: none) {
+  .touch-only {
+    display: inline-block;
+  }
+}
+
+.vertical-only {
+  display: none;
+}
+
+@media (orientation: portrait) {
+  .vertical-only {
+    display: inline-block;
+  }
+}
+
+.horizontal-only {
+  display: none;
+}
+
+@media (orientation: landscape) {
+  .horizontal-only {
+    display: inline-block;
+  }
+}

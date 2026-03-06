@@ -1,0 +1,27 @@
+:root {
+  --color-bg-card: red;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-card: purple;
+  }
+}
+
+:root[data-theme="dark"] {
+  --color-bg-card: purple;
+}
+
+:root[data-theme="light"] {
+  --color-bg-card: lightblue;
+}
+
+.card {
+  background-color: var(--color-bg-card);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .moving-ball {
+    animation: none;
+  }
+}
